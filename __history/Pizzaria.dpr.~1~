@@ -1,0 +1,16 @@
+program Pizzaria;
+
+uses
+  Vcl.Forms,
+  Tela_inicial in '..\Tela_inicial.pas' {frm_tela1},
+  Tela_2 in '..\Tela_2.pas' {frm_tela2},
+  Tela_3 in '..\Tela_3.pas' {frm_tela3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfrm_tela1, frm_tela1);
+  Application.Run;
+end.
